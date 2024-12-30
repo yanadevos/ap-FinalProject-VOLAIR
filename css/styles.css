@@ -1,0 +1,577 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.logo {
+  max-width: 80px; 
+  height: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.title {
+  width: 50%; /* De titel neemt de helft van het scherm in */
+  padding-left: 100px;
+  padding-right: 64px;
+}
+
+.title h1 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.highlight {
+  color: var(--Volair, #62C3C7);
+}
+
+p {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 28px;
+  color: #555;
+}
+
+.image-container {
+  width: 50%; /* De afbeelding neemt de andere helft van het scherm in */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 600p; /* Pas de hoogte aan afhankelijk van de afbeelding */
+}
+
+.image-stack {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  object-fit: cover; /* Zorgt ervoor dat de afbeeldingen het volledige vlak vullen */
+}
+
+.top {
+  z-index: 3;
+  margin-top: -220px;
+  margin-left: 200px;
+
+}
+
+
+.bottom {
+  z-index: 1;
+  margin-top: -80px;
+}
+
+
+.download-btn {
+  background-color:#FFAE00;
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 50px; 
+  font-size: 16px; 
+  font-weight: 600;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-top: 100px;
+}
+
+.download-btn:hover {
+  background-color: #EBA000; 
+}
+
+.features {
+  text-align: center; 
+  padding: 250px 50px; 
+}
+
+.features-title {
+  font-size: 40px; 
+  font-weight: 600; 
+  color: var(--Volair, #62C3C7);
+  margin-bottom: 20px; 
+  padding-top: 60px;
+}
+
+.features-description {
+  font-size: 28px; 
+  color: #555; 
+  line-height: 32px; 
+  margin: 0 auto; 
+  max-width: 600px; 
+  padding-bottom: 50px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px; 
+}
+
+/* Feature-item stijl */
+.feature-item {
+  text-align: center;
+  flex: 1; 
+  padding: 80px;
+}
+
+.feature-icon {
+  width: 50px; 
+  height: auto;
+  margin-bottom: 2px; 
+}
+
+.feature-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Container voor het blok */
+.how-to-use {
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+
+.how-to-use-left {
+  flex: 1; 
+  padding-right: 40px;
+}
+
+.placeholder-img {
+ padding-left: 300px;
+}
+
+/* Rechterkant: Titel en Stappen */
+.how-to-use-right {
+  flex: 1; /* Zorgt ervoor dat de rechterkant de andere helft van de ruimte inneemt */
+  text-align: left;
+}
+
+/* Titel van de rechterkant */
+.how-to-use-title {
+  font-size: 40px; 
+  font-weight: 600; 
+  color: var(--Volair, #62C3C7);
+  margin-top: 20px;
+  margin-bottom: 62px;
+}
+
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step-icon {
+  width: 50px; /* Zet de grootte van de iconen voor de stappen */
+  height: auto;
+  margin-right: 15px; /* Ruimte tussen het icoon en de tekst */
+}
+
+.step-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+/* Stijl voor de reviews sectie */
+.reviews {
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
+/* Titel van de reviews sectie */
+.reviews-title {
+  font-size: 40px; 
+  font-weight: 600; 
+  color: var(--Volair, #62C3C7);
+  margin-left: 64px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+/* Container voor de review-afbeeldingen */
+.reviews-list {
+  display: flex;  /* Flexbox voor horizontale plaatsing */
+  flex-wrap: wrap;  /* Zorgt ervoor dat de items in de volgende rij vallen wanneer nodig */
+  justify-content: center;  /* Centraal uitlijnen */
+}
+
+/* Elke review-item */
+.review-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -50px;
+  margin-left: -50px;
+}
+
+/* Stijl voor de review-afbeeldingen */
+.review-img {
+  width: 100%;
+  padding: -500px;
+  max-width: 450px;  /* Vergroot de afbeeldingen */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Stijl voor het Call-to-Action blok */
+.cta-block {
+  margin-top: 400px;
+  margin-bottom: 400px;
+  height: 500px;
+  background-color: white;  /* Achtergrond wit */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1);  /* Zachte schaduw boven en onder */
+  position: relative; /* Zorgt ervoor dat we de afbeelding buiten het kader kunnen plaatsen */
+}
+
+/* Binnenste content van het blok */
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 30%; /* Voeg ruimte tussen de afbeelding en tekst */
+}
+
+/* Afbeelding aan de linkerzijde */
+.cta-image img {
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  top: -150px;  /* Zet de afbeelding omhoog zodat deze boven het blok uitsteekt */
+  margin-left: 80%;
+}
+
+/* Tekst aan de rechterzijde */
+.cta-text {
+  max-width: 600px;
+  margin-left: 20px; /* Zorgt voor een kleine ruimte tussen de tekst en afbeelding */
+  margin-top: -100px;
+}
+
+/* Titel */
+.cta-text h2 {
+  font-size: 58px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Subtekst */
+.cta-text p {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 20px; /* Ruimte tussen de knoppen */
+  margin-top: 20px;
+}
+
+.store-button {
+  width: 130px; /* Breedte van de knoppen */
+  height: auto; /* Zorg dat de hoogte proportioneel blijft */
+  cursor: pointer; /* Maak duidelijk dat het klikbaar is */
+  transition: transform 0.2s ease;
+}
+
+.store-button:hover {
+  transform: scale(1.05); /* Klein inzoom-effect bij hover */
+}
+
+/* Stijl voor de About Me sectie */
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  padding-bottom: 180px;
+}
+
+h3 {
+  font-size: 58px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-me-text .name {
+  font-weight: bold; /* Maak de naam vetgedrukt */
+  color: var(--Volair, #62C3C7);; /* Pas deze kleur aan naar de gewenste kleur */
+}
+
+.about-me-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px; /* Ruimte tussen de afbeelding en tekst */
+}
+
+.about-me-image {
+  flex: 1; /* De afbeelding neemt 1 deel van de ruimte */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-image img {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe */
+}
+
+.about-me-text {
+  flex: 1; /* De tekst neemt 1 deel van de ruimte */
+  padding: 20px;
+  padding-top: 40px;
+}
+
+
+.about-me-text p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* Algemene stijl */
+.site-footer {
+  background-color: #1a1a1a; /* Donkergrijs */
+  color: #f2f2f2;
+  padding: 40px 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #b6b6b6;
+}
+
+
+/* Definieer de animatie voor het vliegtuigje dat van links komt */
+@keyframes fly-in-left {
+  0% {
+    transform: translateX(-100vw);  /* Begin buiten het scherm aan de linkerzijde */
+  }
+  100% {
+    transform: translateX(0);  /* Beweeg naar zijn normale positie */
+  }
+}
+
+/* Specifieke stijlen voor de middle afbeelding */
+.middle {
+  position: absolute;  /* Zorg ervoor dat de afbeelding kan bewegen */
+  z-index: 2;
+  width: 40%;
+  margin-top: 80px;
+  margin-left: 400px;  /* De eindpositie waar het vliegtuigje moet landen */
+  animation: fly-in-left 2s ease-out forwards;  /* Start de animatie van links */
+}
+
+.middle img {
+  width: 100%;
+  max-width: 300px;  /* Pas de grootte van de afbeelding aan */
+  object-fit: contain;
+}
+
+/* Voor tablets en kleine schermen (max. breedte 768px) */
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .content {
+    flex-direction: column; /* Zet elementen onder elkaar */
+    align-items: center; /* Centreer inhoud */
+  }
+
+  .title {
+    width: 100%; /* Neem de volledige breedte in */
+    padding: 20px; /* Verminder padding */
+    text-align: center; /* Maak tekst gecentreerd */
+  }
+
+  .title h1 {
+    font-size: 40px; /* Verminder lettergrootte */
+    line-height: 1.2; /* Maak tekst compacter */
+    margin-top: 20px;
+  }
+
+  .download-btn {
+    margin-top: 50px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 400px; /* Pas de hoogte aan zoals gewenst */
+  }
+
+  /* Stel de .top afbeelding in */
+  .top {
+    z-index: 3;
+    max-width: 200px;
+    margin: 0 auto; /* Centreer de afbeelding */
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+  /* Stel de .middle afbeelding in */
+  .middle {
+    position: absolute;
+    padding-top: 400px;
+    padding-left: 20px;
+    width: 80%; /* Maak de afbeelding kleiner */
+    max-width: 400px;
+    margin: 0 auto; /* Centreer de afbeelding */
+    margin-left: 70px;
+  }
+
+  /* Stel de .bottom afbeelding in */
+  .bottom {
+    z-index: 1;
+    position: absolute;
+    padding-top: 200px;
+    width: 100%; /* Maak de afbeelding kleiner */
+    max-width: 400px;
+    margin: 0 auto; /* Centreer de afbeelding */
+  }
+
+  .features {
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  .features-list {
+    flex-direction: column; /* Zet items onder elkaar */
+    gap: 30px;
+  }
+
+  .features-description {
+    font-size: 22px;
+  }
+
+  .feature-item {
+    padding: 20px;
+  }
+
+  .feature-text {
+    font-size: 16px;
+  }
+
+  .placeholder-img {
+    display: none;
+  }
+
+.how-to-use-title {
+    text-align: center;
+  }
+
+  .how-to-use {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .how-to-use p {
+    font-size: 20px;
+  }
+
+  .how-to-use-left {
+    margin-bottom: 20px;
+  }
+
+  .reviews-img {
+    padding-bottom: 20px;
+  }
+
+  .reviews-title {
+    margin:auto;
+    text-align: center;
+  }
+
+  .cta-image img {
+    display: none;
+}
+
+/* Subtekst */
+.cta-text p {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.cta-text {
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.cta-text h2 {
+  padding-top: 50px ;
+  font-size: 40px;
+}
+
+.cta-content {
+  text-align: center;
+  display: block;
+  
+}
+
+.cta-block {
+  margin: auto;
+  text-align: center;
+}
+
+.download-buttons {
+  justify-content: center;
+}
+
+
+  .about-me-container {
+    flex-direction: column; /* Zet afbeelding en tekst onder elkaar */
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .about-me-image {
+    margin-bottom: 20px; /* Voeg wat ruimte toe onder de afbeelding */
+  }
+  
+  .cta-block {
+    margin-bottom: 100px;  /* Zorg ervoor dat de cta-block ruimte onderaan laat voor de footer */
+  }
+
+}
