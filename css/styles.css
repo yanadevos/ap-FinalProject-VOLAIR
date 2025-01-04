@@ -254,7 +254,7 @@ p {
 /* Stijl voor het Call-to-Action blok */
 .cta-block {
   margin-top: 400px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
   height: 500px;
   background-color: white;  /* Achtergrond wit */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1);  /* Zachte schaduw boven en onder */
@@ -320,7 +320,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
+  padding: 10px 20px;
   padding-bottom: 180px;
 }
 
