@@ -155,8 +155,8 @@ p {
 }
 
 .feature-text {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   color: #555;
   line-height: 1.5;
 }
@@ -383,7 +383,6 @@ h3 {
 .about-me-text {
   flex: 1; /* De tekst neemt 1 deel van de ruimte */
   padding: 20px;
-  padding-top: 40px;
 }
 
 
@@ -391,6 +390,19 @@ h3 {
   font-size: 20px;
   color: #555;
   line-height: 1.6;
+}
+
+/* Normale link */
+a {
+  color: #62C3C7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Link bij hover */
+a:hover {
+  color: #EBA000;
+  text-decoration: underline;
 }
 
 
